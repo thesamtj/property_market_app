@@ -11,38 +11,38 @@ export class PropertyListComponent implements OnInit {
     {
     "id": 1,
     "name": "SamTJ",
-    "type": "house",
+    "type": "house1",
     "price": 5000
   },
   {
     "id": 2,
     "name": "SamTJ",
-    "type": "house",
-    "price": 5000
+    "type": "house2",
+    "price": 6000
   },
   {
     "id": 3,
     "name": "SamTJ",
-    "type": "house",
-    "price": 5000
+    "type": "house3",
+    "price": 7000
   },
   {
     "id": 4,
     "name": "SamTJ",
-    "type": "house",
-    "price": 5000
+    "type": "house4",
+    "price": 8000
   },
   {
     "id": 5,
     "name": "SamTJ",
-    "type": "house",
-    "price": 5000
+    "type": "house5",
+    "price": 9000
   },
   {
     "id": 6,
     "name": "SamTJ",
-    "type": "house",
-    "price": 5000
+    "type": "house6",
+    "price": 3000
   }
 ]
 
