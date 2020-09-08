@@ -28,3 +28,7 @@
 .card-img-wrapper:hover .member-icons {
   bottom: 0;
 }
+
+.animate {
+  transition: all 0.3s ease-in-out;
+}
