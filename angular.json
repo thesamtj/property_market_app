@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "property-market-app": {
+    "property-market-frontend": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/property-market-app",
+            "outputPath": "dist/property-market-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -66,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "property-market-app:build"
+            "browserTarget": "property-market-frontend:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "property-market-app:build:production"
+              "browserTarget": "property-market-frontend:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "property-market-app:build"
+            "browserTarget": "property-market-frontend:build"
           }
         },
         "test": {
@@ -92,7 +93,6 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "property-market-app:serve"
+            "devServerTarget": "property-market-frontend:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "property-market-app:serve:production"
+              "devServerTarget": "property-market-frontend:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "property-market-app"
+  "defaultProject": "property-market-frontend"
 }
