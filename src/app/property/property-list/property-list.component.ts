@@ -7,7 +7,7 @@ import { HousingService } from '../../services/housing.service';
   styleUrls: ['./property-list.component.scss'],
 })
 export class PropertyListComponent implements OnInit {
-  properties: any;
+  properties: Array<any>;
 
   constructor(private housingService: HousingService) {}
 
