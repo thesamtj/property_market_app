@@ -8,7 +8,7 @@ import { IProperty } from '../property';
 })
 export class PropertyCardComponent implements OnInit {
   @Input()
-  property:Array<IProperty>
+  property:IProperty
 
   constructor() { }
 
