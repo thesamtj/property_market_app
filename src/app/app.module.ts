@@ -11,6 +11,7 @@ import { HousingService } from './services/housing.service';
 import { AddPropertyComponent } from './property/add-property/add-property.component';
 import { PropertyDetailComponent } from './property/property-detail/property-detail.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
+import { UserRegisterComponent } from './user/user-register/user-register.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UserLoginComponent } from './user/user-login/user-login.component';
     PropertyListComponent,
     AddPropertyComponent,
     PropertyDetailComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    UserRegisterComponent
    ],
   imports: [
     BrowserModule,
