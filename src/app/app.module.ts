@@ -9,6 +9,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 
 import { AppComponent } from './app.component';
 import { PropertyCardComponent } from './property/property-card/property-card.component';
@@ -19,6 +20,7 @@ import { AddPropertyComponent } from './property/add-property/add-property.compo
 import { PropertyDetailComponent } from './property/property-detail/property-detail.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
+import {PropertyDetailResolverService} from './property/property-detail/property-detail-resolver.service';
 import { AlertifyService } from './services/alertify.service';
 import { AuthService } from './services/auth.service';
 import { UserService } from './services/user.service';
@@ -46,8 +48,15 @@ import { UserService } from './services/user.service';
     TabsModule.forRoot(),
     ButtonsModule.forRoot(),
     BsDatepickerModule.forRoot(),
+    NgxGalleryModule,
   ],
-  providers: [HousingService, UserService, AlertifyService, AuthService],
+  providers: [
+    HousingService,
+    UserService,
+    AlertifyService,
+    AuthService,
+    PropertyDetailResolverService,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
