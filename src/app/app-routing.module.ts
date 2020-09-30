@@ -1,5 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AddPropertyComponent } from './property/add-property/add-property.component';
+import { PropertyDetailResolverService } from './property/property-detail/property-detail-resolver.service';
+import { PropertyDetailComponent } from './property/property-detail/property-detail.component';
+import { PropertyListComponent } from './property/property-list/property-list.component';
+import { UserLoginComponent } from './user/user-login/user-login.component';
+import { UserRegisterComponent } from './user/user-register/user-register.component';
 
 const routes: Routes = [
   {path: '', component: PropertyListComponent},
