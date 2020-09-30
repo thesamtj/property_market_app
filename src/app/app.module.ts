@@ -24,6 +24,8 @@ import {PropertyDetailResolverService} from './property/property-detail/property
 import { AlertifyService } from './services/alertify.service';
 import { AuthService } from './services/auth.service';
 import { UserService } from './services/user.service';
+import { FilterPipe } from './Pipes/filter.pipe';
+import { SortPipe } from './Pipes/sort.pipe';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { UserService } from './services/user.service';
     PropertyDetailComponent,
     UserLoginComponent,
     UserRegisterComponent,
+    FilterPipe,
+    SortPipe,
   ],
   imports: [
     BrowserModule,
