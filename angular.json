@@ -122,6 +122,10 @@
             "production": {
               "devServerTarget": "housing-market:serve:production"
             }
+          },
+          "deploy": {
+            "builder": "@angular/fire:deploy",
+            "options": {}
           }
         }
       }
