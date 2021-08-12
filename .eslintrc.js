@@ -31,8 +31,7 @@ module.exports = {
         "@angular-eslint/eslint-plugin",
         "eslint-plugin-jsdoc",
         "eslint-plugin-prefer-arrow",
-        "@typescript-eslint",
-        "@typescript-eslint/tslint"
+        "@typescript-eslint"
     ],
     "rules": {
         "@angular-eslint/component-class-suffix": "error",
@@ -291,27 +290,6 @@ module.exports = {
             }
         ],
         "use-isnan": "error",
-        "valid-typeof": "off",
-        "@typescript-eslint/tslint/config": [
-            "error",
-            {
-                "rules": {
-                    "import-spacing": true,
-                    "typedef": [
-                        true,
-                        "call-signature"
-                    ],
-                    "whitespace": [
-                        true,
-                        "check-branch",
-                        "check-decl",
-                        "check-operator",
-                        "check-separator",
-                        "check-type",
-                        "check-typecast"
-                    ]
-                }
-            }
-        ]
+        "valid-typeof": "off"
     }
 };
