@@ -30,7 +30,6 @@ module.exports = {
         "eslint-plugin-import",
         "@angular-eslint/eslint-plugin",
         "eslint-plugin-jsdoc",
-        "@angular-eslint/eslint-plugin-template",
         "eslint-plugin-prefer-arrow",
         "@typescript-eslint",
         "@typescript-eslint/tslint"
