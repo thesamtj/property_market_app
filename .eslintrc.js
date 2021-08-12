@@ -63,9 +63,6 @@ module.exports = {
         "@angular-eslint/no-output-on-prefix": "error",
         "@angular-eslint/no-output-rename": "error",
         "@angular-eslint/no-outputs-metadata-property": "error",
-        "@angular-eslint/template/banana-in-box": "error",
-        "@angular-eslint/template/eqeqeq": "error",
-        "@angular-eslint/template/no-negated-async": "error",
         "@angular-eslint/use-lifecycle-interface": "error",
         "@angular-eslint/use-pipe-transform-interface": "error",
         "@typescript-eslint/adjacent-overload-signatures": "error",
@@ -77,7 +74,7 @@ module.exports = {
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-unsafe-call": "off",
-        "@typescript-eslint/no-unsafe-return": "off"
+        "@typescript-eslint/no-unsafe-return": "off",
         "@typescript-eslint/ban-types": [
             "error",
             {
