@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HousingService } from 'src/app/services/housing.service';
 import { Property } from 'src/app/model/property';
-import {NgxGalleryOptions} from '@kolkov/ngx-gallery';
-import {NgxGalleryImage} from '@kolkov/ngx-gallery';
-import {NgxGalleryAnimation} from '@kolkov/ngx-gallery';
+import { NgxGalleryOptions } from '@kolkov/ngx-gallery';
+import { NgxGalleryImage } from '@kolkov/ngx-gallery';
+import { NgxGalleryAnimation } from '@kolkov/ngx-gallery';
 
 @Component({
     selector: 'app-property-detail',
@@ -26,7 +26,7 @@ export class PropertyDetailComponent implements OnInit {
     ngOnInit() {
         this.propertyId = +this.route.snapshot.params.id;
         this.route.data.subscribe((data: Property) => {
-            this.property = data.prp;
+            this.property = data['prp'];
         });
 
         // this.route.params.subscribe(
