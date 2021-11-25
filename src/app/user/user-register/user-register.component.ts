@@ -5,9 +5,9 @@ import {
     Validators,
     FormBuilder,
 } from '@angular/forms';
-import { UserService } from 'src/app/services/user.service';
-import { User } from 'src/app/model/user';
+import { UserForRegister } from 'src/app/model/user';
 import { AlertifyService } from 'src/app/services/alertify.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
     selector: 'app-user-register',
@@ -16,11 +16,11 @@ import { AlertifyService } from 'src/app/services/alertify.service';
 })
 export class UserRegisterComponent implements OnInit {
     registerationForm: FormGroup;
-    user: User;
+    user: UserForRegister;
     userSubmitted: boolean;
     constructor(
         private fb: FormBuilder,
-        private userService: UserService,
+        private authService: AuthService,
         private alertify: AlertifyService
     ) {}
 
@@ -84,7 +84,7 @@ export class UserRegisterComponent implements OnInit {
         this.registerationForm.reset();
     }
 
-    userData(): User {
+    userData(): UserForRegister {
         return (this.user = {
             userName: this.userName.value,
             email: this.email.value,
